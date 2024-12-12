@@ -5,43 +5,6 @@ This is a powerful Bash script designed for automating the reconnaissance of web
 
 ---
 
-### **Features:**
-
-- **Automated Directory Creation:**
-  - Automatically creates a reconnaissance directory for storing the results of the analysis based on the provided company name.
-  
-- **Subdomain Enumeration:**
-  - Uses a combination of popular tools (Assetfinder, Sublist3r, Subfinder, and Amass) to gather subdomains for the provided root domain.
-  - Results are stored and combined into a single list of subdomains.
-
-- **Live Domain Detection:**
-  - Checks the live status of each subdomain using HTTPX and Httprobe.
-  - Combines the results into a final list of live domains for further analysis.
-
-- **URL Extraction and Analysis:**
-  - Extracts URLs using Katana and GAU, two powerful tools for gathering URLs from web applications.
-  - Filters the URLs based on specific file types (e.g., `.js` files).
-  
-- **Vulnerability Scanning:**
-  - Automatically filters URLs for potential vulnerabilities using `gf` (Go-Fuzz) patterns, including XSS, SQL Injection (SQLI), Remote Code Execution (RCE), Open Redirects, Local File Inclusion (LFI), Server-Side Request Forgery (SSRF), and Command Injection (CMDI).
-  
-- **Parallel Processing:**
-  - Runs multiple tools in parallel, greatly speeding up the reconnaissance process.
-  
-- **Comprehensive Output:**
-  - Results are saved in structured text files, including:
-    - `subdomains.txt`: A list of all found subdomains.
-    - `livedomains.txt`: A list of live domains.
-    - `all_urls.txt`: All discovered URLs.
-    - `jsfiles.txt`: JavaScript file URLs.
-    - Vulnerability-specific files like `xss.txt`, `sqli.txt`, `or.txt` (open redirect), etc.
-  
-- **Cleanup and Reporting:**
-  - Cleans up empty files generated during the reconnaissance process.
-  - Final report shows the success of each tool run, with live domain results and filtered URLs.
-
----
-
 ### **Dependencies:**
 
 Make sure the following tools are installed on your system for the script to work correctly:
@@ -59,6 +22,19 @@ Make sure the following tools are installed on your system for the script to wor
 - **kxss**: A tool for detecting XSS vulnerabilities using a Kubernetes cluster.
 
 You can install them via package managers or from their respective repositories.
+
+---
+
+| Features                          | About                                                                       |
+|-----------------------------------|-----------------------------------------------------------------------------|
+| `Automated Directory Creation`    | Automatically creates a reconnaissance directory for storing the results based on the provided company name. |
+| `Subdomain Enumeration`           | Uses tools like Assetfinder, Sublist3r, Subfinder, and Amass to gather subdomains for a root domain and combines the results into one list. |
+| `Live Domain Detection`           | Checks the live status of subdomains using HTTPX and Httprobe. Combines the results into a final list of live domains. |
+| `URL Extraction and Analysis`     | Extracts URLs using Katana and GAU, filters them based on specific file types such as `.js`. |
+| `Vulnerability Scanning`          | Filters URLs for vulnerabilities using gf patterns including XSS, SQL Injection (SQLI), Remote Code Execution (RCE), Open Redirects, Local File Inclusion (LFI), SSRF, and Command Injection (CMDI). |
+| `Parallel Processing`             | Runs multiple tools in parallel to speed up the reconnaissance process. |
+| `Comprehensive Output`            | Saves results in structured text files such as subdomains.txt, livedomains.txt, all_urls.txt, jsfiles.txt, and vulnerability-specific files (e.g., xss.txt, sqli.txt). |
+| `Cleanup and Reporting`           | Cleans up empty files and generates a final report showing the success of each tool run, live domain results, and filtered URLs. |
 
 
 ## Installation
