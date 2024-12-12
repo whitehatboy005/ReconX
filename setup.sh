@@ -75,19 +75,42 @@ rm -rf $HOME/Gf-Patterns
 
 echo -e "${GREEN}gf patterns installed successfully!${NC}"
 
+# Install Httpx-Toolkit
+echo -e "${CYAN}Installing Httpx...${NC}"
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+sudo cp $HOME/go/bin/httpx /usr/local/bin/
+echo -e "${GREEN}Httpx installed.${NC}"
+
+# Install Httprobe
+echo -e "${CYAN}Installing Httprobe...${NC}"
+go install github.com/tomnomnom/httprobe@latest
+sudo cp $HOME/go/bin/httprobe /usr/local/bin/
+echo -e "${GREEN}Httprobe installed.${NC}"
+
+# Install Gxss
+echo -e "${CYAN}Installing Gxss...${NC}"
+go install github.com/KathanP19/Gxss@latest
+sudo cp $HOME/go/bin/Gxss /usr/local/bin/
+echo -e "${GREEN}Gxss installed.${NC}"
+
+# Install Kxss
+echo -e "${CYAN}Installing Kxss...${NC}"
+go install github.com/Emoe/kxss@latest
+sudo cp $HOME/go/bin/Kxss /usr/local/bin/
+echo -e "${GREEN}Kxss installed.${NC}"
+
+# Install Katana
+echo -e "${CYAN}Installing Katana...${NC}"
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+sudo cp $HOME/go/bin/katana /usr/local/bin/
+echo -e "${GREEN}Katana installed.${NC}"
+
 # Install GAU (GitHub Archive Utility)
 echo -e "${CYAN}Installing GAU...${NC}"
 go install github.com/lc/gau/v2/cmd/gau@latest
 sudo cp $HOME/go/bin/gau /usr/local/bin/
 echo -e "${GREEN}GAU installed.${NC}"
 
-# Install Python dependencies if you have a requirements.txt file
-if [ -f requirements.txt ]; then
-    echo -e "${CYAN}Installing Python dependencies...${NC}"
-    pip3 install -r requirements.txt
-else
-    echo -e "${CYAN}No requirements.txt file found.${NC}"
-fi
 
 echo -e "${CYAN}All necessary dependencies and tools have been installed.${NC}"
 
