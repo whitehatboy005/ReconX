@@ -3,9 +3,9 @@
 
 This is a powerful Bash script designed for automating the reconnaissance of websites. It helps security researchers and penetration testers quickly gather subdomains, detect live domains, and discover vulnerabilities in web applications using various tools like Assetfinder, Subfinder, Amass, HTTPX, Httprobe, Katana, and GAU.
 #
-![Screenshot 2024-12-12 131322](https://github.com/user-attachments/assets/6fe80d82-c8ea-4e9d-a601-8dca4745f602)
----
+![Screenshot 2024-12-12 163817](https://github.com/user-attachments/assets/128f69ea-348d-4ab9-83b8-ffbcdd9ce3c6)
 
+---
 ## Dependencies
 
 Make sure the following tools are installed on your system for the script to work correctly:
