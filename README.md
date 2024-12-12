@@ -1,25 +1,27 @@
 # ReconX
 [![License](https://img.shields.io/github/license/whitehatboy005/Virtual-Assistant-Jarvis)](LICENSE.md)
 
-This is a powerful Bash script designed for automating the reconnaissance of websites. It helps security researchers and penetration testers quickly gather subdomains, detect live domains, and discover vulnerabilities in web applications using various tools like Assetfinder, Sublist3r, Subfinder, Amass, HTTPX, Httprobe, Katana, and GAU.
-
+This is a powerful Bash script designed for automating the reconnaissance of websites. It helps security researchers and penetration testers quickly gather subdomains, detect live domains, and discover vulnerabilities in web applications using various tools like Assetfinder, Subfinder, Amass, HTTPX, Httprobe, Katana, and GAU.
+#
+![Screenshot 2024-12-12 131322](https://github.com/user-attachments/assets/6fe80d82-c8ea-4e9d-a601-8dca4745f602)
 ---
 
-### **Dependencies:**
+## Dependencies
 
 Make sure the following tools are installed on your system for the script to work correctly:
 
-- **Assetfinder**: A tool for discovering subdomains.
-- **Sublist3r**: A fast subdomain enumeration tool.
-- **Subfinder**: A subdomain discovery tool.
-- **Amass**: An advanced network mapping and attack surface discovery tool.
-- **HTTPX**: A fast HTTP toolkit for probing live subdomains.
-- **Httprobe**: A tool to check the live status of subdomains.
-- **Katana**: A high-speed web crawler for web application reconnaissance.
-- **GAU**: A tool to extract URLs from various sources like Wayback and common search engines.
-- **gf (Go-Fuzz)**: A tool for filtering URLs based on predefined patterns (e.g., for vulnerabilities).
-- **Gxss**: A tool for detecting Cross-Site Scripting (XSS) vulnerabilities.
-- **kxss**: A tool for detecting XSS vulnerabilities using a Kubernetes cluster.
+| Tool         | Description                                                                 |
+|--------------|-----------------------------------------------------------------------------|
+| `Assetfinder`| A tool for discovering subdomains.                                          |
+| `Subfinder`  | A subdomain discovery tool.                                                 |
+| `Amass`      | An advanced network mapping and attack surface discovery tool.              |
+| `HTTPX`      | A fast HTTP toolkit for probing live subdomains.                            |
+| `Httprobe`   | A tool to check the live status of subdomains.                              |
+| `Katana`     | A high-speed web crawler for web application reconnaissance.                |
+| `GAU`        | A tool to extract URLs from various sources like Wayback and common search engines. |
+| `gf (Go-Fuzz)`| A tool for filtering URLs based on predefined patterns (e.g., for vulnerabilities). |
+| `Gxss`       | A tool for detecting Cross-Site Scripting (XSS) vulnerabilities.            |
+| `kxss`       | A tool for detecting XSS vulnerabilities using a Kubernetes cluster.        |
 
 You can install them via package managers or from their respective repositories.
 
