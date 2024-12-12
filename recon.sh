@@ -18,12 +18,10 @@ echo "*        | |_) / _ \/ __/ _ \| '_ \ \  /         *"
 echo "*        |  _ <  __/ (_| (_) | | | |/  \         *"
 echo "*        |_| \_\___|\___\___/|_| |_/_/\_\        *"
 echo "*                                                *"
-echo "*                   Powered by                   *"
-echo "*                                                *"
-echo "*  https://github.com/whitehatboy005/ReconX.git  *"
-echo "*                                                *"
+echo "*                      Created by whitehatboy005 *"
 echo "**************************************************"
-echo -e "${NC}"
+echo -e "${YELLOW}Follow me on GitHub: ${BLUE}https://github.com/whitehatboy005${NC}"
+echo ""
 
 # Prompt for the company name and create the reconnaissance directory
 read -p "Enter the company name: " cm
