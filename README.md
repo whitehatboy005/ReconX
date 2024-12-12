@@ -1,5 +1,5 @@
 # ReconX
-[![License](https://img.shields.io/github/license/whitehatboy005/ReconX)](LICENSE.md)
+[![License](https://img.shields.io/github/license/whitehatboy005/Virtual-Assistant-Jarvis)](LICENSE.md)
 
 This is a powerful Bash script designed for automating the reconnaissance of websites. It helps security researchers and penetration testers quickly gather subdomains, detect live domains, and discover vulnerabilities in web applications using various tools like Assetfinder, Sublist3r, Subfinder, Amass, HTTPX, Httprobe, Katana, and GAU.
 
