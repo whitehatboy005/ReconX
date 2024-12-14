@@ -8,7 +8,7 @@ This is a powerful Bash script designed for automating the reconnaissance of web
 ---
 ## Dependencies
 
-Make sure the following tools are installed on your system for the script to work correctly:
+Make sure the following tools are installed on your system for the script to work correctly if not installed run `./setup.sh`:
 
 | Tool         | Description                                                                 |
 |--------------|-----------------------------------------------------------------------------|
