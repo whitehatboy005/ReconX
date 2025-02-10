@@ -1,4 +1,4 @@
-# ReconX
+# 🔎 ReconX
 [![License](https://img.shields.io/github/license/whitehatboy005/Virtual-Assistant-Jarvis)](LICENSE.md)
 
 This is a powerful Bash script designed for automating the reconnaissance of websites. It helps security researchers and penetration testers quickly gather subdomains, detect live domains, and discover vulnerabilities in web applications using various tools like Assetfinder, Subfinder, Amass, HTTPX, Httprobe, Katana, and GAU.
@@ -6,7 +6,7 @@ This is a powerful Bash script designed for automating the reconnaissance of web
 ![Screenshot 2024-12-12 163817](https://github.com/user-attachments/assets/128f69ea-348d-4ab9-83b8-ffbcdd9ce3c6)
 
 ---
-## Dependencies
+## 🗒️ Dependencies
 
 Make sure the following tools are installed on your system for the script to work correctly if not installed run `./setup.sh`:
 
@@ -39,7 +39,7 @@ You can install them via package managers or from their respective repositories.
 | `Cleanup and Reporting`           | Cleans up empty files and generates a final report showing the success of each tool run, live domain results, and filtered URLs. |
 
 
-## Installation
+## ⚙️ Installation
 
 ## Clone the Repository
 ```bash
@@ -55,8 +55,8 @@ cd ReconX
 ./recon.sh
 ```
 
-## Contribution:
+## 👨‍💻 Contribution:
 **Contributions are welcome! If you have any suggestions for improvements or bug fixes, feel free to submit a pull request.**
 
-## License
+## 📝 License
 This project is licensed under the terms of the [MIT license](LICENSE.md).
