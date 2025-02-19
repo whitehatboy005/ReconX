@@ -105,6 +105,12 @@ go install github.com/projectdiscovery/katana/cmd/katana@latest
 sudo cp $HOME/go/bin/katana /usr/local/bin/
 echo -e "${GREEN}Katana installed.${NC}"
 
+# Install Waybackurls
+echo -e "${CYAN}Installing Waybackurls...${NC}"
+go install github.com/tomnomnom/waybackurls@latest
+sudo cp $HOME/go/bin/waybackurls /usr/local/bin/
+echo -e "${GREEN}Waybackurls installed.${NC}"
+
 # Install GAU (GitHub Archive Utility)
 echo -e "${CYAN}Installing GAU...${NC}"
 go install github.com/lc/gau/v2/cmd/gau@latest
