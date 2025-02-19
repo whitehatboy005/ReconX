@@ -85,6 +85,9 @@ echo -e "${CYAN}Running Katana and GAU...${NC}"
 (cat livedomains.txt | katana -d 5 -c 50 -o katana.txt && \
 echo -e "${GREEN}Katana completed.${NC}") &
 
+(cat livedomains.txt | waybackurls | tee waybackurls.txt && \
+echo -e "${GREEN}Waybackurls completed.${NC}") &
+
 (cat livedomains.txt | gau | tee gau.txt && \
 echo -e "${GREEN}GAU completed.${NC}") &
 
@@ -92,7 +95,7 @@ wait
 
 # Combine URLs
 echo -e "${CYAN}Combining all URLs...${NC}"
-cat katana.txt gau.txt | sort | uniq > all_urls.txt
+cat katana.txt gau.txt waybackurls.txt| sort | uniq > all_urls.txt
 echo -e "${GREEN}Combined URLs saved to all_urls.txt.${NC}"
 
 # Filtering js file URL
