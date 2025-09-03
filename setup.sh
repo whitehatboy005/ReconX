@@ -7,7 +7,20 @@ BLUE='\033[0;34m'
 YELLOW='\033[0;33m'
 CYAN='\033[0;36m'
 NC='\033[0m' # No Color
-
+# Banner for Reconx tool
+clear
+echo -e "${CYAN}"
+echo "**************************************************"
+echo "*         ____                     __  __        *"
+echo "*        |  _ \ ___  ___ ___  _ __ \ \/ /        *"
+echo "*        | |_) / _ \/ __/ _ \| '_ \ \  /         *"
+echo "*        |  _ <  __/ (_| (_) | | | |/  \         *"
+echo "*        |_| \_\___|\___\___/|_| |_/_/\_\  SETUP *"
+echo "*                                                *"
+echo "*                      Created by whitehatboy005 *"
+echo "**************************************************"
+echo -e "${YELLOW}Follow me on GitHub: ${BLUE}https://github.com/whitehatboy005${NC}"
+echo ""
 # Update system and install dependencies
 echo -e "${CYAN}Updating system and installing dependencies...${NC}"
 
